@@ -64,7 +64,7 @@ module GitMedia
       end
 
       def list(intersect,excludeFrom)
-        cmd = "#{@sshcmd} ls '#{@path}/' -1ap 2>/dev/null"
+        cmd = "#{@sshcmd} ls -1ap '#{@path}/' 2>/dev/null"
         upstream = `#{cmd}`.split("\n").select { |f| f.match(GM_HASH_REGEX) }.to_set
 
         error_inaccessible if 0 != $?.exitstatus
