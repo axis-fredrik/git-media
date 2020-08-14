@@ -100,7 +100,7 @@ downloaded when checking out or pulling. Default is false
 
 ## Installing
 
-    $ git clone git@github.com:alebedev/git-media.git
+    $ git clone git@github.com:axis-fredrik/git-media.git
     $ cd git-media
     $ sudo gem install bundler
     $ bundle install
